@@ -1,0 +1,58 @@
+
+
+* { 
+	box-sizing: border-box 
+}
+/*type*/
+
+h4 {
+	font-size: 30px;
+	color: $dark;
+	font-family: $font;
+}
+
+p {
+	font-family: $font;
+}
+
+.qWrapper {
+	width: 90%;
+	margin: 0 auto;
+	/*background-color: #eee;*/
+}
+
+.qSidebar {
+	position: fixed;
+	width: 25%;
+	float: left;
+	background-color: $color;
+	display: block;
+	padding: 3%;
+	border-bottom: 3px solid $offwhite;
+	
+	ul {
+		padding: 0;
+		margin: 0;
+	}
+
+	li {
+		font-family: $font;
+		color: $offwhite;
+		font-size: 1em;
+		padding-bottom: 5%;
+	}
+
+	a {
+		text-decoration: none;
+		list-style-type: none;
+
+	}
+}
+
+.qAnswer {
+	width: 70%;
+	float: right;
+	background-color: $offwhite;
+	display: inline-block;
+	padding: 3%;
+}
