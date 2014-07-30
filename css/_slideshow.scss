@@ -1,0 +1,52 @@
+#introtext { 
+    position: relative; 
+    width: 100%;
+    min-height: 850px;
+    background-color: black;
+}
+
+#introtext > .slide { 
+    position: absolute; 
+}
+
+.slide {
+    display: block;
+    clear: both;
+    width: 100%;
+    background-color: black;
+
+    p {
+        padding: 10% 15%;
+        color: #fff;
+        text-align: center;
+        text-align: justify;
+        -webkit-text-align-last: center;
+        -moz-text-align-last: center;
+        -ms-text-align-last: center;
+        text-align-last: center;
+        font-size: 3.25em;
+        font-family: $font;
+        line-height: 1.15;
+    }
+}
+
+.masked {
+    padding: 10% 15%;
+    width: 100%;
+    background: url(https://lh3.googleusercontent.com/-o52iYS0gvSs/AAAAAAAAAAI/AAAAAAABJDk/3SQ3cA9RCCw/photo.jpg) repeat;
+    -webkit-background-clip: text;
+    -webkit-animation-name: masked-animation;
+    -webkit-animation-duration: 50s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-text-fill-color: transparent;
+}
+
+@-webkit-keyframes masked-animation {
+    0% {
+        background-position: left bottom;
+    }
+    100% {
+        background-position: right bottom;
+    }
+}

@@ -1,58 +1,63 @@
-
-
-* { 
-	box-sizing: border-box 
-}
-/*type*/
-
-h4 {
-	font-size: 30px;
-	color: $dark;
-	font-family: $font;
+* {
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 0 auto;
 }
 
-p {
-	font-family: $font;
-}
+.move {
+	max-height: 50px;
+	background-color: pink;
+
+	.previous p {
+		color: white;
+	}
+
+}	
+	
 
 .qWrapper {
-	width: 90%;
-	margin: 0 auto;
-	/*background-color: #eee;*/
-}
-
-.qSidebar {
-	position: fixed;
-	width: 25%;
-	float: left;
-	background-color: $color;
-	display: block;
-	padding: 3%;
-	border-bottom: 3px solid $offwhite;
-	
-	ul {
-		padding: 0;
-		margin: 0;
-	}
-
-	li {
-		font-family: $font;
-		color: $offwhite;
-		font-size: 1em;
-		padding-bottom: 5%;
-	}
-
-	a {
-		text-decoration: none;
-		list-style-type: none;
-
-	}
-}
-
-.qAnswer {
-	width: 70%;
+	width: 45%;
+	/*background: url("img/bkgCard.jpg");*/
+	/*border: 3px solid red;*/
 	float: right;
-	background-color: $offwhite;
-	display: inline-block;
-	padding: 3%;
+	overflow: hidden;
+	margin: 3%;
+}
+
+.questions {
+	padding: 5%;
+	background-size: cover;
+	opacity: 0.5;	
+	background: #1bc2a1; 
+	/*background-image: url("http://i.imgur.com/vyiyIjd.jpg");*/
+
+	h4 {
+		color: #fff;
+		line-height: 1.15;
+		font-size: 2em;
+		font-family: "Exo", Helvetica, sans-serif;
+		padding: 0% 10% 10% 10%;
+		text-align: center;
+	}
+
+	p {
+		font-size: .8;
+		text-align: center;
+		padding: 5%;
+	}
+}
+
+p.chapter {
+	text-transform: uppercase;
+}
+
+.answers {
+	background-image: url("http://i.imgur.com/8RqN2M0.png");
+	background-repeat: repeat;
+	padding: 10% 0;
+
+	p {
+		color: #fff;
+		padding: 3% 15%;
+	}
 }

@@ -1,0 +1,37 @@
+@import "_variables.scss";
+
+.navbar-1.navbar-default {
+	background-color: #fff;
+	letter-spacing: 1.5px;
+	padding: 10px 0;
+}
+
+.navbar-1.navbar-default .navbar-nav > li > a {
+font-family: $font;
+font-size: 11px;
+text-transform: uppercase;
+color: $dark;
+}
+
+.navbar-1.navbar-default .navbar-brand {
+	color: $dark;
+	font-family: $font;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.navbar-1.navbar-default .navbar-right .fa {
+color: $dark;
+font-size: 20px;
+}
+
+.navbar-1.navbar-default .navbar-nav > li > a:hover,
+.navbar-1.navbar-default .navbar-nav > li > a:focus {
+	color: $color;
+	-webkit-transition: color .2s ease-in-out;
+	-moz-transition: color .2s ease-in-out;
+	-ms-transition: color .2s ease-in-out;
+	-o-transition: color .2s ease-in-out;
+	transition: color .2s ease-in-out;
+}
+

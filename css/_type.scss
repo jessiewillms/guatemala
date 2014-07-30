@@ -1,0 +1,66 @@
+@import "variables";
+
+/* avail font weights: 400/700 + italics */
+
+/*type*/
+
+body {
+	text-rendering: optimizeLegibility;
+	line-height: 1.5;
+}
+
+h1, h2, h3, h4, p {
+	font-family: $font;
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2 {
+	text-align: left;
+	font-weight: 700;
+	padding: 1% 0;
+	line-height: .85;
+}	
+
+h1 {
+	line-height: .9;
+	font-size: 7.125em;
+	margin-top: 1.5%;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.5em;
+	margin-bottom: 3%;
+	text-transform: uppercase;
+	line-height: 1.15;
+}
+
+p {
+	font-size: 1em;
+	padding-bottom: 3%;
+}
+
+p.caption {
+	margin-left: 1.5%;
+	padding-left: 1.5%;
+	border-left: 3px solid $color;
+}
+
+p.scroll {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	color: $light;
+}
+
+h4 {
+	font-size: 2em;
+	color: $dark;
+	font-family: $font;
+	font-weight: lighter;
+}

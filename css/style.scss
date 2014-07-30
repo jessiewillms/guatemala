@@ -1,131 +1,111 @@
 @import "variables";
-
-    article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block}html{cursor:default;font-size:100%;overflow-y:scroll;-webkit-tap-highlight-color:transparent;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body,form,input,button,select,textarea{font-size:100%;margin:0}a,a:active,a:hover{outline:none}a:focus{outline:thin dotted}abbr{_border-bottom:expression(this.title ? '1px dotted':'none')}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}mark{background:#FF0;color:#000}pre,code,kbd,samp{font-family:monospace,monospace;_font-family:'courier new',monospace;font-size:1em}pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word}q{quotes:none}q:before,q:after{content:'';content:none}small,sub,sup{font-size:75%}sub,sup{line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}nav ul{list-style:none}audio[controls],canvas,video{display:inline-block;*display:inline}audio{display:none;_display:expression(this.controls ? 'inline':'none');*zoom:1}audio[controls]{display:inline-block}img{border:0;-ms-interpolation-mode:bicubic}svg:not(:root){ overflow:hidden}legend{*margin-left:-7px}button,input,select,textarea{vertical-align:baseline;*vertical-align:middle}button,input{line-height:normal;_overflow:expression(this.type == 'button|reset|submit' ? 'visible':'')}button,input[type="button"],input[type="reset"],input[type="submit"]{overflow:visible;-webkit-appearance:button}input[type="checkbox"],input[type="radio"]{box-sizing:border-box}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-decoration{ -webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
+@import "clearfix";
+@import "type";
+@import "responsive";
+@import "nav";
+@import "slideshow";
+@import "normalize";
+@import "navbar";
+@import "map";
+@import "footer";
 
 body {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	margin: 0 auto;
 	padding: 0 auto;
-}
-/* start nav */
-
-header.seriesName {
-	background-color: #333;
-	padding: 1.5%;
+	-webkit-font-smoothing: antialiased;
 }
 
-/*series title name*/
-.seriesName p {
-	color: #fff;
-	display: inline;
+img {
+	width: 100%;
 }
-/*end series title li*/
 
-/*start nav*/
-nav {
-	/*background-color: #333;*/
-	display: inline;
-	float: right;
-
-	ul {
-		margin: 0;
-		padding: 0;
-		text-align: center;
-		min-height: 45px;
-		display: inline;
-
-		li {
-			display: inline;
-			list-style-type: none;
-		}
-
-		a {
-			
-			color: #fff;
-			text-decoration: none;
-
-			&:hover {
-				background: rgba(255,255,255,.09);
-			}
-		}
-	}
-}
+/* start header */
 
 /*start hero header: big intro photo*/
 header.hero {
-	border: 1px solid purple;
-	background: url("http://31.media.tumblr.com/47d8817227b81bc6cae25e59dc3804d7/tumblr_n8gyvzQtkD1st5lhmo1_1280.jpg");
-	background-size: cover;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
+	background-color: #000;
 	padding: 10%;
 }
 
-li.startStory {
-	text-align: center;
-	list-style: none;
-
-	a {
-		text-decoration: none;
-		color: $light;
-
-		&:hover {
-			color: rgba(255,255,255,.9);
-			-webkit-transition: all .3s ease;
-			-moz-transition: all .3s ease;
-			-ms-transition: all .3s ease;
-			-o-transition: all .3s ease;
-			transition: all .3s ease;
-		}
-	}
-}
-
-p.seriesIntro {
-	text-align: center;
-	padding: 0 10%;
-	color: $light;
-}
-/*start hero header: big intro photo*/
-
 /*start sections = chapters*/
-
 section {
+	margin: 0 10% 0% 5%;
 	max-width: 70%;
-	margin-left: 10%;
 	/*margin-right: 20%;*/
 }
 
+p.chapter {
+	border-left: 3px solid $color;
+	margin-bottom: 3%;
+	padding: 0;
+	padding-left: 1.5%;
+	text-transform: uppercase;
+	font-family: $font2;
+	font-weight: 700;
+}
+
 /* end sections = chapters */
-
-/*background cover images*/
-
 .bkgCover {
-	max-width: 100%;
+	margin: 5% 0;
+	padding: 20% 0;
+	min-width: 100%;
+	max-height: 300px;
+	background-size: cover;
+	/*background-image: url("http://www.ipolitics.ca/wp-content/uploads/2014/07/guatemala02-940x530.jpg");*/
 	background-attachment: fixed;
-	background-size: cover; 
+}
+
+#bkgCover2 {
+	/*background: url("http://placekitten.com/1000/850");*/
+	background: url("http://www.ipolitics.ca/wp-content/uploads/2014/07/guatemala01-940x530.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+#bkgCover3 {
+	background: url("http://www.ipolitics.ca/wp-content/uploads/2014/07/guatemala06-940x530.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+#bkgCover4 {
+	background: url("http://www.ipolitics.ca/wp-content/uploads/2014/07/guatemala05-940x530.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+#bkgCover5 {
+	background: url("http://www.ipolitics.ca/wp-content/uploads/2014/07/guatemala04-940x530.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+#bkgCover6 {
+	background: url("http://www.ipolitics.ca/wp-content/uploads/2014/07/guatemala03-940x530.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
 }
 
 /*start blockquote*/
 blockquote {
+	display: inline-block;
+	float: right;
+	margin-left: 1.5%;
+	padding: 1.5% $padding 1.5% 1.5%;
+	width: 45%;
 	border-left: 5px solid $color;
-	padding-left: 1%;
-	display: block;
-	width: 100%;
-}
-/*end blockquote*/
-
-/*start footer*/
-footer {
-	width: 100%;
-	min-height: 45px;
-	background-color: $dark;
-	/*display: block;*/
-	clear: both;
-	/*margin-top: 250px;*/
+	line-height: 2;
 
 	p {
-		color: $light;
-		padding: 5%;
-	}
+		font-family: $font2;
+
+		&::first-line {
+			padding-left: $padding;
+		}
+	}	
 }
-/*end footer*/
+/*end blockquote*/

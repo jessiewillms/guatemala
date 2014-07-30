@@ -1,0 +1,14 @@
+/*start footer*/
+
+footer {
+	min-height: 45px;
+	width: 100%;
+	background: $dark;
+	clear: both;
+	margin: 0;
+
+	p {
+		padding: $padding;
+		color: $light;
+	}
+}
