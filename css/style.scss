@@ -5,9 +5,28 @@
 @import "nav";
 @import "slideshow";
 @import "normalize";
-@import "navbar";
+/*@import "navbar";*/
 @import "map";
 @import "footer";
+@import "stickyNav";
+
+a.tweetThis {
+	background: $dark;
+	padding: 1.5% 5%;
+	font-size: .8em;
+	margin-right: 0;
+	text-decoration: none;
+	color: $light;
+	font-family: $font2;
+
+	&:hover {
+		background: $light;
+		color: $dark;
+		border-radius: 15px;
+
+		transition: 0.8s all;
+	}
+}
 
 body {
 	-webkit-box-sizing: border-box;
@@ -37,6 +56,21 @@ section {
 	/*margin-right: 20%;*/
 }
 
+.photoInset {
+	border: 2px solid purple;
+	width: 65%;
+	float: right;
+	margin-right: -10%;
+
+	img {
+		padding: $padding;
+
+		p.coffee {
+			color: pink;
+		}
+	}
+}
+
 p.chapter {
 	border-left: 3px solid $color;
 	margin-bottom: 3%;
@@ -49,13 +83,10 @@ p.chapter {
 
 /* end sections = chapters */
 .bkgCover {
-	margin: 5% 0;
+	/*margin: 5% 0;*/
 	padding: 20% 0;
 	min-width: 100%;
-	max-height: 300px;
-	background-size: cover;
-	/*background-image: url("http://www.ipolitics.ca/wp-content/uploads/2014/07/guatemala02-940x530.jpg");*/
-	background-attachment: fixed;
+
 }
 
 #bkgCover2 {
@@ -66,7 +97,7 @@ p.chapter {
 	background-attachment: fixed;
 }
 #bkgCover3 {
-	background: url("http://www.ipolitics.ca/wp-content/uploads/2014/07/guatemala06-940x530.jpg");
+	background: url("http://www.ipolitics.ca/wp-content/uploads/2014/07/guatemala02-940x530.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -95,6 +126,7 @@ blockquote {
 	display: inline-block;
 	float: right;
 	margin-left: 1.5%;
+	margin-right: -10%;
 	padding: 1.5% $padding 1.5% 1.5%;
 	width: 45%;
 	border-left: 5px solid $color;
@@ -109,3 +141,64 @@ blockquote {
 	}	
 }
 /*end blockquote*/
+
+/*start blockquote.bkgCoverQuote */
+.bkgCoverQuote {
+	width: 45%;
+	float: right;
+	margin: 0;
+	padding: 0;
+}
+/*end blockquote.bkgCoverQuote */
+
+
+
+/*responsive stuff here here hereherherhehehrehr*/
+
+@media (max-width: 320px) {
+	.slide p {
+		font-size: 2.25em;
+		text-align: left;
+	}
+
+	.slide h1 {
+		font-size: 3.15em;
+	}
+
+	p.scrollText {
+		font-size: 2em;
+		padding: 40% 0;
+	}
+
+	#introtext {
+		min-height: 600px;
+		display: block;
+	}
+
+	h3 {
+		margin: 1.5% 0;
+	}
+
+	section {
+		max-width: 90%;
+		margin: 0 3%;
+	}
+
+	p {
+		font-size: 1.25em;
+		padding-bottom: 5%;
+	}
+	.map {
+		max-width: 100%;
+		display: block;
+		margin: 0;
+		padding: 0;
+	}
+
+	p.cutline {
+		margin: 3%;
+		padding: 3%;
+		border-left: 3px solid #27ae60;
+	}
+}
+

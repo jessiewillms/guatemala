@@ -16,16 +16,20 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 
+	<!-- js for sticky nav -->
+	<link href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.0.0/animate.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="jquery.easing.min.js">
+
 	<!-- google fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Exo:400,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Vollkorn:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-
 </head>
+
 <body>
-	<!-- start fade text intro -->
-	<div id="slideshow">
+	<!-- start introtext animation -->
+<!-- 	<div id="introtext">
 		<div class="slide">
 			<p>Canada's ranking as one of the world's greatest mining nations is uncontested.</p>
 		</div>
@@ -38,44 +42,24 @@
 		<div class="slide">
 			<p>James Munson reports from Ottawa and Guatemala.</p>
 		</div>	
-		<div class="slide">	
-			<div class="masked">
-			<h1>A rock best <br>left unturned</h1>
-			<p class="scrollText">Scroll <i class="fa fa-chevron-down"></i></p>
-			</div>
-		</div>	
-	</div>
-	<!-- end fade text intro -->
+		<div class="slide masked">	
+			<h1>A rock best left unturned</h1>
+			<a href="#ch1"><p class="scrollText">Scroll^<i class="fa fa-chevron-down"></i></p></a>
+		</div>
+	</div> -->
+	<!-- end introtext animation -->
 
 	<!-- /nav -->
-	<nav id="navigation" class="navbar navbar-default navbar-fixed-top navbar-1" role="navigation">
-		<div class="container">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse-1">
-					<span class="toggleBar">toggle</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="index.html">Trapped underground | iPolitics</a>
-			</div>
-
-			<!-- toggle section — to collapse -->
-			<div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
-				<ul class="nav navbar-nav">
-					<li class="active hidden"></li>
-					<li><a href="#ch1">1</a></li>
-					<li><a href="#ch2">2</a></li>
-					<li><a href="#ch3">3</a></li>
-					<li><a href="#ch4">4</a></li>
-					<li><a href="#ch5">5</a></li>
-					<li><a href="#ch6">6</a></li>
-				</ul>
-			</div><!-- /.navbar-collapse -->
-		</div><!-- /.container -->
+	<nav id="stick" class="stick">
+		<ul class="nav">
+			<li><a href="#ch1">1</a></li>
+			<li><a href="#ch2">2</a></li>
+			<li><a href="#ch3">3</a></li>
+			<li><a href="#ch4">4</a></li>
+		</ul>
 	</nav>
 	<!-- end nav -->
+
 	<!-- start main = body -->
 	<main>
 		<!-- start intro section -->
@@ -90,12 +74,12 @@
 
 			<p>Cu's fear of being murdered, in a setting that could easily by explained as a botched armed robbery, is tragically common in this part of eastern Guatemala. The site of one of the first genocides in the three-decade long armed conflict that scars this country still, the region surrounding Lake Izabal is frighteningly unsafe for those who live at the bottom, even as it enters into a new economic era with the grand reopening of a massive nickel mine and smelting complex on the lake’s north coast.</p>
 		</section>
-		
+
 		<div class="map">
 			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15376.462454443668!2d-89.33035964999999!3d15.531931700000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1406670506885" width="500" height="350" frameborder="0" style="border:0"></iframe>
-			<p>Nulla vitae elit libero, a pharetra augue.</p>
+			<p class="cutline">Nulla vitae elit libero, a pharetra augue.</p>
 		</div>
-		
+
 		<section>
 			<p>“We are scared about what has happened before,” said Irma Yolanda Choc Cac, a resident of a town that near the mine currently embroiled in a violent disagreement with its owners over the scope of its land concession.</p>
 
@@ -111,87 +95,146 @@
 
 		<!-- background cover image: liscenceplate.jpg -->
 		<div class="bkgCover" id="bkgCover3"></div>
-		<blockquote>Pictured: Donec id elit non mi porta gravida at eget metus.</blockquote>
+		<p class="caption">cutline for bkg cover</p>
 		<!-- end background cover image: liscenceplate.jpg -->
 
 		<!-- start intro section -->
 		<section id="ch2">
 			<p class="chapter">two</p>
-			<h3>Natural resources economic independence emergency response, civil society save the world</h3>
-			<p>Maecenas faucibus mollis interdum. Maecenas sed diam eget risus varius blandit sit amet non magna. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla.</p>
-			<p>Maecenas faucibus mollis interdum. Maecenas sed diam eget risus varius blandit sit amet non magna. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla.</p>
-			<p>Maecenas faucibus mollis interdum. Maecenas sed diam eget risus varius blandit sit amet non magna. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla.</p>
-		</section>
+			<h3>A clash at the crossroads</h3>
 
-		<!-- start blockquote -->
-		<blockquote><i class="fa fa-quote-left"></i><p>QUOTE: Oh, but your love is such a swamp; you don't think before you jump. Oh, but your love is such a swamp; you don't think before you jump. Oh, but your love is such a swamp; you don't think before you jump.</p></blockquote>
-		<a href="https://twitter.com/share" class="twitter-share-button" data-text="QUOTE: Oh, but your love is such a swamp; you don't think before you jump. Oh, but your love is such a swamp; you don't think before you jump. Oh, but your love is such a swamp; you don't think before you jump." data-via="iPoliticsCA" data-hashtags="bestleftunturned">Tweet</a> 
-		<!-- end blockquote -->
+			<p>The Fenix nickel project began pumping out popcorn-sized chunks of refined nickel for the first time in 32 years this summer, after a grand opening that included an appearance by President Otto Perez Molina on May 30.</p>
 
-		<section>		
-			<p>Maecenas faucibus mollis interdum. Maecenas sed diam eget risus varius blandit sit amet non magna. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla.</p>
-			<p>Maecenas faucibus mollis interdum. Maecenas sed diam eget risus varius blandit sit amet non magna. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla.</p>
+			<p>The investors who finally brought this brownfield behemoth back into operation are a group of Russian businessmen under the guise of a Cyprus-based outfit called the Solway Investment Group. Solway, which has a nickel smelting plant in Ukraine and plans for another in Indonesia, trucks the ore to the Honduran port of Puerto Castilla, where it is shipped to undisclosed buyers.</p>
+
+			<p>As seen from a small fibreglass fishing boat in the middle of Lake Izabal, the mining complex dominates the northern coastline. It’s tall red and white stripped tower - one of the only smokestacks remaining from its time as an INCO mine - puffs yellow smoke that mingles with the white clouds drifting around the Santa Cruz hills behind it.</p>
+
+			<p>The nickel is mined from those hills, where the project's concession has put current and past owners into violent land disputes with over a dozen communities.</p>
+
+			<!-- start blockquote -->
+			<blockquote><i class="fa fa-quote-left"></i>
+				<p>QUOTE: Oh, but your love is such a swamp; you don't think before you jump. Oh, but your love is such a swamp; you don't think before you jump. Oh, but your love is such a swamp; you don't think before you jump.</p>
+					
+					<a href="https://twitter.com/intent/tweet?text=&quot;Oh but your love is such a swamp.&quot;url=http%3A%2F%2FiPolitics.ca&via=iPoliticsCA" class="tweetThis">Tweet this quote. <i class="fa fa-twitter"></i></a>
+
+			</blockquote>
+			<!-- end blockquote -->
+
+			<p>These communities occupy 1,300-hectare lots, or lotes in Spanish, and are each named after numbers: Lote Uno, Lote Dos, Lote Tres, and so on. Seen on a map, the sum of the lotes are shaped into a large trapezoid property with two of the lotes - Lote Ocho and Lote Nueve - sticking out to make the corner of the trapezoid closest to the mine</p>.
+
+			<p>"Our fathers and grandfathers have been here," said Edin Leone Tot Sub, one of Lote Ocho's residents, during a meeting of some community residents in July.</p>
+
+			<p>Three weeks before the meeting, just a few days after Fenix's grand reopening with President Otto Perez, the towns of Lote Ocho and Nueve allege the mine's security personnel tried to drag them into a fight.</p>
+
+			<p>On June 7, a Saturday, the villages held a meeting to discuss their land ownership with the mine. They were surprised by the appearance of several mine security guards who came uninvited.</p>
+
+			<p>They had weapons, said Sub. The community refused let them speak and the guards became menacing. After someone threatened to call a justice of the peace in the local branch of the federal Ministerio Publico - an independent prosecutorial body similar to the U.S. Attorney General’s office - the guards left.</p>
+
+			<p>They ambled down the 13-kilometer dirt road that link the communities to the main paved road that runs east towards the mine. There, the guards allegedly put on helmets and body armour. </p>
+
+			<p>The community says that they spent the night living under the trees outside of Lote Nueve that night. They were too scared to go home, said Choc Cac, one of the women residents of Lote Nueve.</p>
+
+			<div class="photoInset">
+				<!-- start img + cutline -->
+				<img src="img/guatemala01.jpg">
+				<p class="cutline">photo of tear gas canisters</p>
+				<!-- end img + cutline -->
+			</div>
+
+			<p>The next day, the justice of the peace arrived and demanded the soldiers leave the crossroads where the dirt road and the paved one meet. Oddly, members of the military and the national civil police were also there but did not intervene. </p>
+
+			<p>The guards eventually left the road crossing - and Lote Nueve and Ocho’s only road into town - that Sunday under unclear circumstances. There was some kind of clash, as a company truck was burned, flipped and pushed into a ditch. While the villagers said the security guards had done it to incite a clash, another source said that it in fact had been residents of the lotes who burned it.</p>
+
+			<p>While one description of the clash by residents didn’t have the villagers anywhere near the guards as they left, another rendition featured the villagers standing by a resident who also acts as their legal representative, Rodrigo Tot, at the crossroads.</p>
+
+			<p>Whoever burned the car, whose rusted frame now sits on its side in a marshy ditch beside the road, the guards left canisters of pepper spray and even the firearm’s license of one of their own.</p>
+
+			<p>The only mention of the clash in the local news was a brief story in a tabloid-style daily. It doesn’t mention the land issues or the fight during Lote Nueve’s meeting.</p>
+
+			<p>“The newspapers never tell the news,” said XXX.</p>
 		</section>
 		<!-- end intro section -->
 
 		<!-- background cover image: liscenceplate.jpg -->
 		<div class="bkgCover" id="bkgCover3"></div>
+		<p class="caption">cutline for bkg cover</p>
 		<!-- end background cover image: liscenceplate.jpg -->
 
 		<!-- start section chapter section -->
 		<section id="ch3">
 			<p class="chapter">three</p>
-			<h3>Irish skinny, grinder affogato, dark, sweet carajill</h3>
+			<h3>Stolen land</h3>
+			<p>Lote Nueve’s mysterious troubles at proving their land title go back at least a decade, when the owners before Hudbay, Skye Resources, bought Compania Guatemalteca de Niquel (CGN) from INCO and had the subsidiary’s old concession renewed for a fresh 25 years in 2004.</p>
 
-			<p>Cat ipsum dolor sit amet, cat snacks attack feet need to chase tail hate dog. Leave hair everywhere stand in front of the computer screen. Chase mice mark territory sleep on keyboard yet stretch hate dog lick butt. Give attitude hide when guests come over shake treat bag hate dog, missing until dinner time attack feet. Chew iPad power cord hopped up on goofballs. Sun bathe destroy couch for under the bed. Make muffins behind the couch. Sleep on keyboard stretch, but intrigued by the shower and behind the couch. Nap all day hate dog but sleep on keyboard play time nap all day chase mice. Stand in front of the computer screen play time burrow under covers run in circles so destroy couch. Hopped up on goofballs intently stare at the same spot or hate dog yet need to chase tail.</p>
+			<p>CGN’s concession, dolled out by the Mines and Hydrocarbons Ministry, overlapped with many of the lotes’ lands. Skye claimed the people of Lote Nueve had only recently ended up on the land included in the concession.</p>
 
-			<p>Cat ipsum dolor sit amet, cat snacks attack feet need to chase tail hate dog. Leave hair everywhere stand in front of the computer screen. Chase mice mark territory sleep on keyboard yet stretch hate dog lick butt. Give attitude hide when guests come over shake treat bag hate dog, missing until dinner time attack feet. Chew iPad power cord hopped up on goofballs. Sun bathe destroy couch for under the bed. Make muffins behind the couch. Sleep on keyboard stretch, but intrigued by the shower and behind the couch. Nap all day hate dog but sleep on keyboard play time nap all day chase mice. Stand in front of the computer screen play time burrow under covers run in circles so destroy couch. Hopped up on goofballs intently stare at the same spot or hate dog yet need to chase tail.</p>
+			<p>The community had lived on the land since the turn of the last century, said current residents, and when the military dictatorship that came to power in 1952 brought in a new land registry in XXX, the town’s leaders promptly registered a deed.</p>
 
-			<p>Cat ipsum dolor sit amet, cat snacks attack feet need to chase tail hate dog. Leave hair everywhere stand in front of the computer screen. Chase mice mark territory sleep on keyboard yet stretch hate dog lick butt. Give attitude hide when guests come over shake treat bag hate dog, missing until dinner time attack feet. Chew iPad power cord hopped up on goofballs. Sun bathe destroy couch for under the bed. Make muffins behind the couch. Sleep on keyboard stretch, but intrigued by the shower and behind the couch. Nap all day hate dog but sleep on keyboard play time nap all day chase mice. Stand in front of the computer screen play time burrow under covers run in circles so destroy couch. Hopped up on goofballs intently stare at the same spot or hate dog yet need to chase tail.</p>
+			<p>The paid of the equivalent of a mortgage in 1985 and have a copy of both transactions. When CGN turned on the heat in 2002, they went to the municipal land registry to prove theirs was legitimate.</p>
 
-			<p>Cat ipsum dolor sit amet, cat snacks attack feet need to chase tail hate dog. Leave hair everywhere stand in front of the computer screen. Chase mice mark territory sleep on keyboard yet stretch hate dog lick butt. Give attitude hide when guests come over shake treat bag hate dog, missing until dinner time attack feet. Chew iPad power cord hopped up on goofballs. Sun bathe destroy couch for under the bed. Make muffins behind the couch. Sleep on keyboard stretch, but intrigued by the shower and behind the couch. Nap all day hate dog but sleep on keyboard play time nap all day chase mice. Stand in front of the computer screen play time burrow under covers run in circles so destroy couch. Hopped up on goofballs intently stare at the same spot or hate dog yet need to chase tail.</p>
+			<p>But it was gone.</p>
 
-			<!-- start qWrapper = question cards -->
+			<p>The municipality said the page was inexplicably missing and CGN refused to accept Lote Nueve’s own deed as proof enough. So the community sold some of their animals and hired a lawyer to take the municipality to court.</p>
 
+			<p>This happened five times, said Tot. The community kept making mistakes in their claims. Finally, on February 8 2011, the Constitutional Court in Guatemala City - the highest in the country - ordered the Izabal department to re-instate the page.</p>
 
-			<div class="qWrapper">
+			<p>More than four years later, the municipality still hasn’t complied, according to Rodriguo.</p>
 
-				<div class="move">
-					<a href="#"><p class="previous"><</p></a>
-					<a href=""><p class="next">></p></a>
-				</div>
+			<p>In the meantime, the World Bank has sponsored a new terrestrial survey of the region, which has been performed by the federal government’s Registro de Informacion Catastral (RIC).</p>
 
-				<div class="questions">
-					<p>question one</p>
-					<h4> A Foreign Policy Not Up to the Job</h4>
-				</div>
+			<p>The surveyors visited the community in November2013, where the villagers said they even fed the visitors, and the community's hope was that the new maps would give some basic facts on where the land borders lie.</p>
 
-				<div class="answers">
-					<p>The CSR strategy is about to get smashed. I’m describing the Canadian government’s current strategy and what risks happening to it if the two cases mentioned above follow through.</p>
+			<p>The survey ended in December. Members of RIC came by Lote Nueve in XXX to say that they were going to release the survey's results in small pieces, which the community protested.</p>
 
-					<p>Canada’s involvement in the three mines. Here I’m talking about the Canadian government’s sponsorship or support for these three mines.</p>
+			<p>Since then, there’s been silence.</p>
 
-					<p>Canada helping justice programs in Guatemala. Here I’m describing money we already give to the Guatemalan government in helping their justice program.</p>
-
-					<p>Will the DFATD relaunch help things?. I’m looking at whether the amalgamation of the DFAIT and CIDA branches will help things.</p>
-
-				</div>
-			</div>
-			<!-- end qWrapper = question cards -->	
-
-			<p>Cat ipsum dolor sit amet, cat snacks attack feet need to chase tail hate dog. Leave hair everywhere stand in front of the computer screen. Chase mice mark territory sleep on keyboard yet stretch hate dog lick butt. Give attitude hide when guests come over shake treat bag hate dog, missing until dinner time attack feet. Chew iPad power cord hopped up on goofballs. Sun bathe destroy couch for under the bed. Make muffins behind the couch. Sleep on keyboard stretch, but intrigued by the shower and behind the couch. Nap all day hate dog but sleep on keyboard play time nap all day chase mice. Stand in front of the computer screen play time burrow under covers run in circles so destroy couch. Hopped up on goofballs intently stare at the same spot or hate dog yet need to chase tail.</p>
+			<p>“Nothing has happened, nobody is talking about how this will happen and when,” said Manuel Xo Cu.</p>
 		</section>
 		<!-- end section chapter section -->
 
 		<!-- background cover image: liscenceplate.jpg -->
 		<div class="bkgCover" id="bkgCover4"></div>
+		<p class="caption">i didn't know i was lonely till i saw your face</p>
 		<!-- end background cover image: liscenceplate.jpg -->
 
 		<!-- start section chapter section -->
 		<section id="ch4">
 			<p class="chapter">four</p>
-			<h3>Climb leg rub face on everything give attitude</h3>
-			<p>Sleep on keyboard. Climb leg missing until dinner time yet climb leg so claw drapes. Throwup on your pillow climb leg burrow under covers and leave hair everywhere mark territory. Stretch find something else more interesting and chew foot, sun bathe chew iPad power cord or leave dead animals as gifts. Shake treat bag why must they do that. Claw drapes hunt anything that moves so sleep on keyboard hopped up on goofballs yet hide when guests come over, chew iPad power cord or stretch. </p>
+			<h3>Their day in court</h3>
+
+			<p>For Lote Ocho, the legal ground has been much shakier and the clash with CGN much more violent.</p>
+
+			<p>The community doesn’t have land title like Lote Nueve, and under Skye Resource’s ownership in 2007, the company used a court order to burn down several homes after its villagers refused to leave voluntarily.</p>
+
+			<p>On January 17 2007, 11 women from Lote Ocho allege they were gang-raped during the forceful eviction. </p>
+
+			<p>When Hudbay took the helm of CGN in 2008, and people still lived on the land, things got worse. </p>
+
+			<p>German Choc Chub, a Lote Ocho resident and mine opponent, was shot to death on September 27 2009. Three other men were severely injured, one is paralyzed from the waist down. </p>
+
+			<p>In 2010, the Toronto law firm Klippensteins and Co. sent own of its younger lawyers Cory Wanless to Guatemala to see if a case was strong enough to be heard in Canada.</p>
+
+			<p>There had been several other attempts to have the worst excesses of the extractive sector’s behaviour overseas heard in a Canadian court, all failures. </p>
+
+			<p>In 1999, lawyers for XXX tried to have a case brought against Cambior Inc. for a XXX ton cyanide spill at the Omai mine in Guyana in XXX, owned by Cambior's subsidiary Omai Gold Mines Ltd. It was turned down by a judge in XXX.</p>
+
+			<p>And as recently as 2012, a Quebec court dismissed an attempt to have a case over Anvil Mining Ltd’s alleged lending of its company helicopter to soldiers in the Democratic Republic of Congo’s  military for a trip that ended with them committed a massacre in the town of Kilwa, DRC. The Supreme Court of Canada refused to hear an appeal in November.</p>
+
+			<p>What Wanless believed gave the Lote Ocho cases a better chance was the number of witnesses to the crimes. In 2010, he filed a claim of injury on the behalf of the 11 women, the wife of the murdered resident, and the man who was paralyzed by a gunshot wound. </p>
+
+			<p>Hudbay fought to have the cases dismissed on the grounds that a parent company cannot be found liable if a subsidiary neglects its duty of care to its neighbours - a legal doctrine that goes back nearly 100 years in Canadian common law - as well arguing that any duty of care existed in this case. </p>
+
+			<p>In July 2013, Justice Carole J. Brown decided that the case could be heard in Canada because she reasoned that there is potential for a trial to prove a duty of care was breached.</p>
+
+			<p>"The court basically says this is something that has existed," said Wanless, the Lote Ocho residents' lawyer.</p>
+
+			<p>In anticipation of the trial, Hudbay and the plaintiffs are currently working together on an agreed factum, which requires an exchange of documents and questions between the parties. This process, known as discovery, will have the plaintiffs ask Hudbay to supply internal information about the security situation at Fenix, and given the expectation that Hudbay will fight to keep secret as much documentation as possible, Wanless expects this process could take up to two to three years.</p>
+
+			<p>In Guatemala, there are still others who live near the mine who allege they have been assaulted in incidents related to the mine.</p>
+
+			<p>Samuel Coc Chu, mayor of Lote Dieciseis, was shot by guards in XXX, he said.</p>
+
+			<p>XXX, he said.</p>
 		</section>
 		<!-- ednd section chapter section -->
 
@@ -207,15 +250,10 @@
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 
-<!-- start js for slideshow -->
-<script>
-	$("#slideshow > div:gt(0)").hide();
-	$('#slideshow > div:first')
-	.delay(400)
-	.fadeOut(400, function(){
-		$(this)
-		.next()
-		.fadeIn(400)
+	<!-- start js for introtext -->
+	<script>
+		$("#introtext > div:gt(0)").hide();
+		$('#introtext > div:first')
 		.delay(400)
 		.fadeOut(400, function(){
 			$(this)
@@ -227,22 +265,56 @@
 				.next()
 				.fadeIn(400)
 				.delay(400)
-				.fadeOut(200, function(){
+				.fadeOut(400, function(){
 					$(this)
 					.next()
-					.fadeIn(400);
+					.fadeIn(400)
+					.delay(400)
+					.fadeOut(200, function(){
+						$(this)
+						.next()
+						.fadeIn(400);
+					});
 				});
-			});
-		});				
-	})
-	.end()
-	.appendTo('#slideshow');
-</script>
-<!-- end js for slideshow -->
+			});				
+		})
+		.end()
+		.appendTo('#introtext');
+	</script>
+	<!-- end js for introtext -->
 
-<!-- js for twitter tweet buttons -->
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-<!-- end js for twitter tweet buttons -->
+	<!-- js for twitter tweet buttons -->
+	
+	<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+	<!-- end js for twitter tweet buttons -->
 
+	<!-- start js for smooth scroll -->
+	<script>
+	$(function() {
+	  $('a[href*=#]:not([href=#])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html,body').animate({
+	          scrollTop: target.offset().top
+	        }, 2500);
+	        return false;
+	      }
+	    }
+	  });
+	});
+	</script>
+	<!-- end js for smooth scroll -->
+
+	<!-- js for sticky nav -->
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="http://cdn.jsdelivr.net/stickynavbar.js/1.1.1/jquery.stickyNavbar.min.js"></script>
+
+	<script>
+		$(function () {
+			$('.stick').stickyNavbar();
+		});
+	</script>
 </body>
 </html>

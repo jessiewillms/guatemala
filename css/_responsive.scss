@@ -1,19 +1,82 @@
-/*navigation menu | responsive*/
 
+/*@media (min-width: 320px) {
 
-@media (max-width: 320px) {
-
-	h1, h2 {
+	.slide h1 {
 		color: $light;
+		font-size: 3em;
 	}
 
-	#fitText h1 {
-		color: white;
+	.masked {
+		display: none;
+	}*/
+
+	/*header.hero {
+		background-color: #000;
+		padding: 10%;
 	}
-/*.masked {
-display: none;
-}*/
-}
+
+	section {
+		margin: 0 10% 0% 5%;
+		max-width: 70%;
+	}
+
+	.photoInset {
+		border: 2px solid purple;
+		width: 65%;
+		float: right;
+		margin-right: -10%;
+
+		img {
+			padding: $padding;
+
+			p.coffee {
+				color: pink;
+			}
+		}
+	}
+
+	p.chapter {
+		border-left: 3px solid $color;
+		margin-bottom: 3%;
+		padding: 0;
+		padding-left: 1.5%;
+		text-transform: uppercase;
+		font-family: $font2;
+		font-weight: 700;
+	}
+
+	.bkgCover {
+		margin: 5% 0;
+		padding: 20% 0;
+		min-width: 100%;
+	}
+*/
+
+
+/**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (min-width: 768px) {
 	.navbar-header {

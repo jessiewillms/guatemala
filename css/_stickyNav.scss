@@ -1,0 +1,21 @@
+.active {
+	    color: #fff;
+	    -webkit-transform: translate3d(0, 0, 0);
+	    -moz-transform: translate3d(0, 0, 0);
+	    -o-transform: translate3d(0, 0, 0);
+	    -ms-transform: translate3d(0, 0, 0);
+	    transform: translate3d(0, 0, 0);
+}
+
+nav {
+	/**/
+	background: $dark	;
+	max-height: 45px;
+	width: 100%;
+
+	li, a, ul {
+		color: $light;
+		display: inline-block;
+		vertical-align: middle;
+	}
+}

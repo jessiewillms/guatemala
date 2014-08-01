@@ -18,14 +18,14 @@ h1, h2, h3, h4, p {
 h1, h2 {
 	text-align: left;
 	font-weight: 700;
-	padding: 1% 0;
+	/*padding: 1% 0;*/
 	line-height: .85;
 }	
 
 h1 {
 	line-height: .9;
 	font-size: 7.125em;
-	margin-top: 1.5%;
+	/*margin-top: 1.5%;*/
 	text-transform: uppercase;
 }
 
@@ -45,18 +45,24 @@ p {
 	padding-bottom: 3%;
 }
 
-p.caption {
+/*photo cutlines for photos and visual elements - ie. maps*/
+p.cutline {
 	margin-left: 1.5%;
+	color: orange;
 	padding-left: 1.5%;
+	font-family: $font2;
 	border-left: 3px solid $color;
 }
 
-p.scroll {
-	margin: 0;
-	padding: 0;
-	text-align: center;
-	color: $light;
+/*photo JUST FOR CAPTIONS includes covers*/
+p.caption {
+	font-family: Helvetica;
+	color: powderblue;
+	width: 25%;
+	text-align: left;
+	margin-left: 65%;
 }
+
 
 h4 {
 	font-size: 2em;
